@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+    <div id="header">
+
+        <div class="container">
+            <nav>
+               
+                 <h1 id="logo">S<span id="splogo">ACHIN.</span></h1>
+
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Front-End Developer</p>
+                <br>
+                <h1>Hi, I'm <span>Sachin</span> Mhawar<br> From Haryana</h1>
+
+            </div>
+        </div>
+    </div>
+
+
+
+<!------------- About section ------------>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images/sk6.jpg" >
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hi, I’m Sachin, a passionate software developer specializing in full-stack development and scalable web solutions. With experience in Html, css, JavaScript, Python, and cloud technologies, I create efficient, user-centered applications. I enjoy solving complex problems through clean, maintainable code, and I’m always eager to learn new technologies.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('training')">Training</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Front-End Developer</span><br>HTML, CSS, JavaScript, React Js.</li>
+                             <li><span>Data Structure using C</span><br>50+ Questions.</li>
+                              <li><span>OOPS Using Java,</span><br>Basic Knowledge.</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="training">
+                        <ul>
+                            
+                            <li><span>2025 - Present</span><br>Mern's Stack Developer from Code help</li>
+                            <li><span>25-07-2024</span><br>NOVEM CONTROLS PVT LTD Mohali Chandigarh</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023-2025</span><br>Polytechnic Diploma: Computer Science Engineering from Seth Jai Parkash Polytechnic College, Damla, Yamunanagar</li>
+                            <li><span>2018-2020</span><br>Completed Industrial Training Institute (ITI) course from Government ITI, Rewari</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-------------Services Section------------->
+    <div id="services">
+        <div class="container">
+        <h1 class="sub-title">My Sevices</h1>
+        <div class="services-list">
+
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>I have a passion for building clean and creative user interfaces. With solid coding skills and a problem-solving attitude, I turn designs into working websites. I'm excited to work on projects that bring ideas to life and improve user experience.</p>
+                <a href="#">Learn more</a>
+            </div>
+
+             <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Frontend Developer</h2>
+                <p>I create the look and feel of websites using HTML, CSS, and JavaScript. I focus on building clean, responsive, and user-friendly interfaces that work well on all devices. From designing layouts to adding animations and interactive features, I handle everything users interact with on the web.</p>
+                <a href="#">Learn more</a>
+            </div>
+
+             <div>
+                <i class="fa-brands fa-react"></i>
+                <h2>React Developer</h2>
+                <p>I build dynamic and interactive web applications using React. With a component-based approach, I create reusable, clean, and efficient UI elements. I manage data and state using hooks and props, and I make sure the apps are fast, responsive, and user-friendly. I also work with tools like React Router for navigation and integrate APIs to bring real-time features to life.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!------------------- Portfolio Section------------------>
+<div id="portfolio">
+
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="Images/work-1.png">
+                <div class="layer">
+                    <h3>Rock-Paper-Scissors GAME</h3>
+                    <p>Challenge your friends or the computer in a classic game of Rock-Paper-Scissors! Choose your move and see if you can outsmart your opponent. Simple, fun, and addictive.</p>
+                    <a href="https://sachinmhawar.github.io/Rock-Paper-Scissors/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="Images/work-2.png">
+                 <div class="layer">
+                    <h3>Tic-Tac-Toe Game</h3>
+                    <p>Developed a Tic-Tac-Toe game with an intuitive interface and multiplayer functionality, incorporating game logic and real-time updates.</p>
+                    <a href="https://sachinmhawar.github.io/Tic-Tac-Toe/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="Images/work-3.png">
+                 <div class="layer">
+                    <h3>Online Calculator</h3>
+                    <p>Built a functional calculator with a clean UI supporting basic arithmetic operations and real-time result display.</p>
+                    <a href="https://sachinmhawar.github.io/Calculator/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+
+<!--------------------Contact-Section------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p> <i class="fa-solid fa-paper-plane"></i>sachin278199@gmail.com</p>
+                <p> <i class="fa-solid fa-square-phone"></i>9671623036</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/sachin.mhavar?mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/sachin_mhawar?igsh=NnR6aGJkNHpwYnhi"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://x.com/mhawar_sac?t=PCNvuigPg7VBr7Hh4MvgUA&s=08"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/sachin-kumar-b199712b5/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="Images/Sachin_CV (5).pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>copyright &copy Sachin.<i class="fa-solid fa-heart"></i></p>
+
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links")
+
+    var tabcontents = document.getElementsByClassName("tab-contents")
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+         for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbwVMhUo6bJdDCvCwblXgtZu-zb3nR_-f_usWGmz0pCoCM2TvJ7DmiXjXVjCLZDuMVJC/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message sent successfully"
+        setTimeout(function(){
+            msg.innerHTML = ""
+        }, 5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
+
+    
+</body>
+</html>
